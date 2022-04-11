@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "133943255145",
+    "project_id": "internatensias-b9fb4",
+    "storage_bucket": "internatensias-b9fb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133943255145:android:4cd6e7dc52b819cf8c82f8",
+        "android_client_info": {
+          "package_name": "com.example.internatensias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133943255145-j7vk6867momi78dttq6nfa9ggign1htg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA66EZLkvwxvLxnEc3WtIo7Hvzz42EOAG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133943255145-j7vk6867momi78dttq6nfa9ggign1htg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

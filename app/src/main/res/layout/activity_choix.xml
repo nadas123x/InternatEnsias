@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ii"
+    tools:context=".Choix">
+
+    <Button
+        android:id="@+id/btnvisiteur"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="143dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="376dp"
+        android:backgroundTint="#CA492D"
+        android:text="Visiteur"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="139dp"
+
+        android:layout_height="53dp"
+        android:backgroundTint="#CA492D"
+        android:text="Etudiant"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnvisiteur"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="136dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="#CA492D"
+        android:text="Admin"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
