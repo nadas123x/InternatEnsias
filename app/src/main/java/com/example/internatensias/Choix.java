@@ -16,7 +16,7 @@ Button btnAdmin;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choix
         );
-        btnAdmin=findViewById(R.id.btnAdmin);
+        btnAdmin=findViewById(R.id.btnAdminResidants);
         btnvisiteur=findViewById(R.id.btnvisiteur);
         button2=findViewById(R.id.button2);
         btnvisiteur.setOnClickListener(new View.OnClickListener() {
