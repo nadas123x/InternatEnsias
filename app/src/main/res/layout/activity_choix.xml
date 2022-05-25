@@ -12,7 +12,7 @@
         style="@style/MaterialAlertDialog.Material3"
         android:layout_width="143dp"
         android:layout_height="56dp"
-        android:layout_marginTop="376dp"
+        android:layout_marginTop="352dp"
         android:backgroundTint="#CA492D"
         android:text="Visiteur"
         android:textColor="#FFFFFF"
@@ -34,7 +34,7 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdmin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.569"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,12 +42,12 @@
         app:layout_constraintVertical_bias="0.478" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnAdmin"
         style="@style/MaterialAlertDialog.Material3"
         android:layout_width="136dp"
         android:layout_height="51dp"
         android:layout_marginEnd="124dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="104dp"
         android:backgroundTint="#CA492D"
         android:text="Admin"
         android:textColor="#FFFFFF"

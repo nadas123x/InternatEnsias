@@ -2,16 +2,37 @@ package com.example.internatensias;
 
 public class model
 {
-    String name,course,email,purl;
+    String name,filiere,email,NumChambre,NumTel,purl;
     model()
     {
 
     }
-    public model(String name, String course, String email, String purl) {
+    public model(String name, String filiere, String email, String NumChambre,String NumTel,String purl) {
         this.name = name;
-        this.course = course;
+        this.filiere = filiere;
         this.email = email;
         this.purl = purl;
+        this.NumChambre=NumChambre;
+        this.NumTel=NumTel;
+    }
+
+
+
+
+    public String getNumChambre() {
+        return NumChambre;
+    }
+
+    public void setNumChambre(String numChambre) {
+        NumChambre = numChambre;
+    }
+
+    public String getNumTel() {
+        return NumTel;
+    }
+
+    public void setNumTel(String numTel) {
+        NumTel = numTel;
     }
 
     public String getName() {
@@ -22,12 +43,12 @@ public class model
         this.name = name;
     }
 
-    public String getCourse() {
-        return course;
+    public String getfiliere() {
+        return filiere;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
+    public void setfiliere(String filiere) {
+        this.filiere = filiere;
     }
 
     public String getEmail() {

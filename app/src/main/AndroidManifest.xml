@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.internatensias" >
+    package="com.example.internatensias">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,24 +10,51 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.InternatEnsias" >
+        android:theme="@style/Theme.InternatEnsias">
         <activity
-            android:name=".LoginAdmin"
+            android:name=".searchtest"
             android:exported="false" />
         <activity
-            android:name=".MenuAdmResident"
+            android:name=".coch"
+            android:exported="false" />
+        <activity
+            android:name=".proposResid"
+            android:exported="false" />
+        <activity
+            android:name=".contactVisiteur"
+            android:exported="false" />
+        <activity
+            android:name=".faqVisiteur"
+            android:exported="false" />
+        <activity
+            android:name=".InternatPage"
+            android:exported="false" />
+        <activity
+            android:name=".Choix"
             android:exported="false" />
         <activity
             android:name=".PageAdmin"
             android:exported="false" />
         <activity
+            android:name=".MenuAdmResident"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAdmin"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Visiteurmenu"
+            android:exported="false" />
+        <activity
+            android:name=".adddata"
             android:exported="false" />
         <activity
             android:name=".Register"
             android:exported="false" />
         <activity
-            android:name=".Visiteurmenu"
+            android:name=".Adddemande"
             android:exported="false" />
         <activity
             android:name=".Visiteurpage"
@@ -36,11 +63,23 @@
             android:name=".login"
             android:exported="false" />
         <activity
-            android:name=".Choix"
+            android:name=".appeltest"
+            android:exported="false" />
+        <activity
+            android:name=".email"
+            android:exported="false" />
+        <activity
+            android:name=".datainsert"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityresid"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivitybot"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -36,7 +36,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:0.4.0'
     // FirebaseUI for Firebase Realtime Database
     implementation 'com.firebaseui:firebase-ui-database:8.0.1'
-
+    implementation 'com.orhanobut:dialogplus:1.5'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
     // FirebaseUI for Cloud Firestore
     implementation 'com.firebaseui:firebase-ui-firestore:8.0.1'
 
@@ -52,7 +53,7 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.13.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
-
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

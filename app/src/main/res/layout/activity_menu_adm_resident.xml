@@ -29,29 +29,29 @@
 
         android:layout_width="142dp"
         android:layout_height="44dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="496dp"
         android:backgroundTint="#F6DD81"
         android:text="Chambres"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/listeresid"
         style="@style/MaterialAlertDialog.Material3"
 
-        android:layout_width="127dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="268dp"
+        android:layout_width="129dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="276dp"
         android:backgroundTint="#F6DD81"
         android:text="Liste résidents"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,15 +59,15 @@
         android:id="@+id/button5"
         style="@style/MaterialAlertDialog.Material3"
 
-        android:layout_width="140dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="268dp"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="276dp"
         android:backgroundTint="#F6DD81"
-        android:text="Profil résidents"
+        android:text="Profil "
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

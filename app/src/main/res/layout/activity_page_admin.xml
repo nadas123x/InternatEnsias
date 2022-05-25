@@ -9,34 +9,34 @@
     >
 
     <Button
-        style="@style/MaterialAlertDialog.Material3"
-        android:backgroundTint="#CA492D"
         android:id="@+id/btnAdminResidants"
+        style="@style/MaterialAlertDialog.Material3"
         android:layout_width="143dp"
         android:layout_height="53dp"
+        android:backgroundTint="#CA492D"
         android:text="Résidants"
         android:textStyle="bold"
 
         app:layout_constraintBottom_toTopOf="@+id/btnAdminDemandes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.921" />
+        app:layout_constraintVertical_bias="0.932" />
 
     <Button
-        style="@style/MaterialAlertDialog.Material3"
-        android:backgroundTint="#CA492D"
         android:id="@+id/btnAdminDemandes"
+        style="@style/MaterialAlertDialog.Material3"
         android:layout_width="142dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#CA492D"
         android:text="Demandes"
         android:textStyle="bold"
 
         app:layout_constraintBottom_toTopOf="@+id/btnAdminProblemes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintHorizontal_bias="0.591"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -44,14 +44,14 @@
         style="@style/MaterialAlertDialog.Material3"
         android:layout_width="140dp"
         android:layout_height="46dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="28dp"
         android:backgroundTint="#CA492D"
         android:text="Problèmes"
         android:textStyle="bold"
 
         app:layout_constraintBottom_toTopOf="@+id/btnAdminMsg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -59,13 +59,13 @@
         style="@style/MaterialAlertDialog.Material3"
         android:layout_width="136dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginBottom="168dp"
         android:backgroundTint="#CA492D"
         android:text="Messagerie"
         android:textStyle="bold"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

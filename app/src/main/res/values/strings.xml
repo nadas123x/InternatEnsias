@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">InternatEnsias</string>
+    <string name="app_name">simple</string>
+    <string name="other_item">other_item</string>
+    <string name="other_item2">other_item2</string>
+    <string name="réclamation_du_problème">réclamation du problème</string>
+    <string name="modification_du_profil">modification du profil</string>
+    <string name="envoi_d_un_message">Envoi d\'un message</string>
+    <string name="choisir_cochambre">choisir cochambre</string>
 </resources>

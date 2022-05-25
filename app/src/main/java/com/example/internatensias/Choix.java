@@ -16,7 +16,7 @@ Button btnAdmin;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choix
         );
-        btnAdmin=findViewById(R.id.btnAdminResidants);
+        btnAdmin=findViewById(R.id.btnAdmin);
         btnvisiteur=findViewById(R.id.btnvisiteur);
         button2=findViewById(R.id.button2);
         btnvisiteur.setOnClickListener(new View.OnClickListener() {
@@ -31,7 +31,7 @@ Button btnAdmin;
             startActivity(new Intent(Choix.this, login.class));
         });
         btnAdmin.setOnClickListener(view -> {
-            startActivity(new Intent(Choix.this, PageAdmin.class));
+            startActivity(new Intent(Choix.this, LoginAdmin.class));
         });
 
 
