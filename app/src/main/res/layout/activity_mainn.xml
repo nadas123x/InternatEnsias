@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/h"
+    tools:context=".MainActivityresid">
+
+    <Button
+        android:id="@+id/propos"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="388dp"
+        android:backgroundTint="#CA492D"
+        android:text="A propos"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="456dp"
+        android:backgroundTint="#CA492D"
+        android:text="Se déconnecter"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.649"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/faqq"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="536dp"
+        android:backgroundTint="#CA492D"
+        android:text="FAQ"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

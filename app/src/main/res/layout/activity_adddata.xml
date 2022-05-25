@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/jz"
+    tools:context=".adddata">
+
+
+    <EditText
+        android:id="@+id/add_name"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:hint="Nom Complet étudiant"
+        android:textColor="#000"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_filiere"
+        android:textSize="20sp"
+        android:hint="Filière étudiant"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_email"
+        android:textSize="20sp"
+        android:hint="Email étudiant"
+        android:layout_marginBottom="15dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_NumTel"
+        android:textSize="20sp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:hint="Numéro téléphone étudiant"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_NumChambre"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:hint="Numéro chambre étudiant"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"/>
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_purl"
+        android:textSize="20sp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:hint="URL image"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"/>
+
+    <Button
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:id="@+id/add_submit"
+
+        android:layout_marginRight="0sp"
+        android:backgroundTint="#CA492D"
+        android:layout_marginTop="20sp"
+android:textStyle="bold"
+        android:textSize="26sp"
+        android:text="      Ajouter      "/>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

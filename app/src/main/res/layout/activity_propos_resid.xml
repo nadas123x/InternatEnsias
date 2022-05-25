@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/hh"
+    tools:context=".proposResid">
+
+    <Button
+        android:id="@+id/prop1"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="158dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="228dp"
+        android:backgroundTint="#914740"
+        android:text="Buvette"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/prop2"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="158dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="336dp"
+        android:backgroundTint="#914740"
+        android:text="Epicerie"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/prop3"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="158dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="448dp"
+        android:backgroundTint="#914740"
+        android:text="Administration"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/prop4"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="158dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="560dp"
+        android:backgroundTint="#914740"
+        android:text="Autres"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

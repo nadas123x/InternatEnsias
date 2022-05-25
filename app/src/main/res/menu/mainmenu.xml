@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText"
+    >
+    <item
+
+        android:id="@+id/menuother"
+        android:title="@string/réclamation_du_problème"
+
+        app:showAsAction="never" />
+    <item
+
+        android:id="@+id/menuother2"
+        android:title="@string/modification_du_profil"
+        app:showAsAction="never" />
+    <item
+
+        android:id="@+id/menuother3"
+        android:title="@string/envoi_d_un_message"
+        app:showAsAction="never" />
+    <item
+
+        android:id="@+id/menuother4"
+        android:title="@string/choisir_cochambre"
+        app:showAsAction="never" />
+
+</menu>
