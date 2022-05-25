@@ -68,4 +68,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        style="@style/MaterialAlertDialog.Material3"
+        android:layout_width="136dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#CA492D"
+        android:text="Se déconnecter"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,10 +33,13 @@
             android:name=".Choix"
             android:exported="false" />
         <activity
-            android:name=".PageAdmin"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MenuAdmResident"
+            android:exported="false" />
+        <activity
+            android:name=".ListeProblemes"
             android:exported="false" />
         <activity
             android:name=".LoginAdmin"
@@ -78,10 +81,10 @@
             android:name=".MainActivitybot"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityDemande"
             android:exported="false" />
         <activity
-            android:name=".MainActivityDemande"
+            android:name=".PageAdmin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
