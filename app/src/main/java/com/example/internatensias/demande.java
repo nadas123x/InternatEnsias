@@ -2,30 +2,22 @@ package com.example.internatensias;
 
 public class demande
 {
-    String name,filiere,email,NumChambre,NumTel,purl;
+    String nom,email,NumTel,content;
     demande()
     {
 
     }
-    public demande(String name, String filiere, String email, String NumChambre, String NumTel, String purl) {
-        this.name = name;
-        this.filiere = filiere;
+    public demande(String nom, String email, String NumTel, String content) {
+        this.nom = nom;
         this.email = email;
-        this.purl = purl;
-        this.NumChambre=NumChambre;
+        this.content = content;
         this.NumTel=NumTel;
     }
 
 
 
 
-    public String getNumChambre() {
-        return NumChambre;
-    }
 
-    public void setNumChambre(String numChambre) {
-        NumChambre = numChambre;
-    }
 
     public String getNumTel() {
         return NumTel;
@@ -35,21 +27,15 @@ public class demande
         NumTel = numTel;
     }
 
-    public String getName() {
-        return name;
+    public String getNom() {
+        return nom;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
-    public String getfiliere() {
-        return filiere;
-    }
 
-    public void setfiliere(String filiere) {
-        this.filiere = filiere;
-    }
 
     public String getEmail() {
         return email;
@@ -59,11 +45,11 @@ public class demande
         this.email = email;
     }
 
-    public String getPurl() {
-        return purl;
+    public String getContent() {
+        return content;
     }
 
-    public void setPurl(String purl) {
-        this.purl = purl;
+    public void setContent(String content) {
+        this.content = content;
     }
 }

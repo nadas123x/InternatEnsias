@@ -16,14 +16,14 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivityDemande extends AppCompatActivity
 {
     RecyclerView recview;
-    myadapter adapter;
+    myadapterDemande adapter;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
-        setTitle("Search here..");
+        setContentView(R.layout.activity_maindemande);
+        setTitle("Rechercher");
 
 
 
@@ -33,12 +33,12 @@ public class MainActivityDemande extends AppCompatActivity
         recview=(RecyclerView)findViewById(R.id.recview);
         recview.setLayoutManager(new LinearLayoutManager(this));
 
-        FirebaseRecyclerOptions<model> options =
-                new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("students"), model.class)
+        FirebaseRecyclerOptions<demande> options =
+                new FirebaseRecyclerOptions.Builder<demande>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("DemandeBenef"), demande.class)
                         .build();
 
-        adapter=new myadapter(options);
+        adapter=new myadapterDemande(options);
         recview.setAdapter(adapter);
     }
 
@@ -85,12 +85,12 @@ public class MainActivityDemande extends AppCompatActivity
 
     private void processsearch(String s)
     {
-        FirebaseRecyclerOptions<model> options =
-                new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("students").orderByChild("name").startAt(s).endAt(s+"\uf8ff"), model.class)
+        FirebaseRecyclerOptions<demande> options =
+                new FirebaseRecyclerOptions.Builder<demande>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("DemandeBenef").orderByChild("nom").startAt(s).endAt(s+"\uf8ff"), demande.class)
                         .build();
 
-        adapter=new myadapter(options);
+        adapter=new myadapterDemande(options);
         adapter.startListening();
         recview.setAdapter(adapter);
 

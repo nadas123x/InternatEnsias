@@ -55,7 +55,7 @@ public class Adddemande extends AppCompatActivity
 
         map.put("email",email.getText().toString());
         map.put("NumTel",NumTel.getText().toString());
-        map.put("purl",demande.getText().toString());
+        map.put("content",demande.getText().toString());
         FirebaseDatabase.getInstance().getReference().child("DemandeBenef").push()
                 .setValue(map)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {

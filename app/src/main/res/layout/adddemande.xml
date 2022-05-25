@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@mipmap/dmd"
-    tools:context=".adddata">
+    tools:context=".Adddemande">
 
 
     <EditText
@@ -71,7 +71,7 @@
         android:layout_marginTop="20sp"
         android:textStyle="bold"
         android:textSize="26sp"
-        android:text="      Ajouter      "/>
+        android:text="      Envoyer      "/>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
