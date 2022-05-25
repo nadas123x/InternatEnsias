@@ -8,10 +8,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivityresid extends AppCompatActivity {
 Button logout,propos,faqq;
+ImageView botchat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,7 @@ Button logout,propos,faqq;
         logout=findViewById(R.id.logout);
         propos=findViewById(R.id.propos);
         faqq=findViewById(R.id.faqq);
+        botchat=findViewById(R.id.botchat);
 
         logout.setOnClickListener(view -> {
             startActivity(new Intent(MainActivityresid.this, login.class));
@@ -30,6 +33,9 @@ Button logout,propos,faqq;
         });
         faqq.setOnClickListener(view -> {
             startActivity(new Intent(MainActivityresid.this, faqVisiteur.class));
+        });
+        botchat.setOnClickListener(view -> {
+            startActivity(new Intent(MainActivityresid.this, MainActivitybot.class));
         });
     }
 
