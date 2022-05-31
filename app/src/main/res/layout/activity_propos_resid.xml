@@ -8,7 +8,7 @@
     tools:context=".proposResid">
 
     <Button
-        android:id="@+id/prop1"
+        android:id="@+id/buv"
         style="@style/MaterialAlertDialog.Material3"
         android:layout_width="158dp"
         android:layout_height="57dp"

@@ -27,7 +27,7 @@ public class Appel extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_appel);
 
         this.editTextPhoneNumber = (EditText) this.findViewById(R.id.editText_phoneNumber);
         this.buttonCall = (Button) this.findViewById(R.id.button_call);

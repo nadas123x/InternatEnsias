@@ -4,8 +4,8 @@ public class modelProblem {
     String NomRésidant,type,contexte,purl;
     modelProblem(){
     }
-    public modelProblem(String nomRésidant, String type, String contexte,String purl) {
-        NomRésidant = nomRésidant;
+    public modelProblem(String NomRésidant, String type, String contexte,String purl) {
+       this.NomRésidant=NomRésidant;
         this.type = type;
         this.contexte = contexte;
         this.purl=purl;

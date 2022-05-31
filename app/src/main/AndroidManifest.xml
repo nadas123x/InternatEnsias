@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InternatEnsias">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".Appel"
             android:exported="false" />
         <activity
@@ -88,10 +91,10 @@
             android:name=".MainActivitybot"
             android:exported="false" />
         <activity
-            android:name=".PageAdmin"
+            android:name=".MainActivityresid"
             android:exported="false" />
         <activity
-            android:name=".MainActivityresid"
+            android:name=".PageAdmin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

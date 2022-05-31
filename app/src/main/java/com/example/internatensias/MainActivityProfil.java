@@ -1,46 +1,44 @@
 package com.example.internatensias;
 
 
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.EditText;
-import android.widget.SearchView;
-import android.widget.Toast;
-
 import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 
-public class ListeProblemes extends AppCompatActivity
+public class MainActivityProfil extends AppCompatActivity
 {
     RecyclerView recview;
-    myadapter2 adapter;
+    myadapterDemande adapter;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_liste_problemes);
-        setTitle("Search here..");
+        setContentView(R.layout.activity_maindemande);
+        setTitle("Rechercher");
+
+
+
+
+
 
         recview=(RecyclerView)findViewById(R.id.recview);
         recview.setLayoutManager(new LinearLayoutManager(this));
 
-        FirebaseRecyclerOptions<modelProblem> options =
-                new FirebaseRecyclerOptions.Builder<modelProblem>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Probleme"), modelProblem.class)
+        FirebaseRecyclerOptions<demande> options =
+                new FirebaseRecyclerOptions.Builder<demande>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("DemandeBenef"), demande.class)
                         .build();
 
-        adapter=new myadapter2(options);
+        adapter=new myadapterDemande(options);
         recview.setAdapter(adapter);
     }
 
@@ -87,12 +85,12 @@ public class ListeProblemes extends AppCompatActivity
 
     private void processsearch(String s)
     {
-        FirebaseRecyclerOptions<modelProblem> options =
-                new FirebaseRecyclerOptions.Builder<modelProblem>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Probleme").orderByChild("NomRésidant").startAt(s).endAt(s+"\uf8ff"), modelProblem.class)
+        FirebaseRecyclerOptions<demande> options =
+                new FirebaseRecyclerOptions.Builder<demande>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("DemandeBenef").orderByChild("nom").startAt(s).endAt(s+"\uf8ff"), demande.class)
                         .build();
 
-        adapter=new myadapter2(options);
+        adapter=new myadapterDemande(options);
         adapter.startListening();
         recview.setAdapter(adapter);
 

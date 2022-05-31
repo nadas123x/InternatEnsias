@@ -5,34 +5,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="5dp"
     android:elevation="5dp"
+    android:background="@mipmap/hhy"
     app:cardUseCompatPadding="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-
-        android:layout_height="727dp"
-        android:background="@mipmap/jz"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="15dp">
 
 
         <LinearLayout
-            android:layout_width="373dp"
-            android:layout_height="188dp"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/img1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="2dp"
+                android:layout_height="13dp"
                 android:layout_gravity="center_vertical"
                 android:src="@mipmap/ic_launcher"
                 app:civ_border_color="#FF000000"
                 app:civ_border_width="2dp" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="299dp"
-                android:layout_height="177dp"
+                android:layout_width="332dp"
+                android:layout_height="146dp"
                 android:orientation="vertical">
 
                 <TextView

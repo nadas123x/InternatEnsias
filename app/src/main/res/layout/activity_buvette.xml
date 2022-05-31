@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/g" />
+        app:srcCompat="@mipmap/ga" />
 
     <ImageView
         android:id="@+id/appel"
