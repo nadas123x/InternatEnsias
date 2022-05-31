@@ -3,6 +3,7 @@
     package="com.example.internatensias">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InternatEnsias">
+        <activity
+            android:name=".Appel"
+            android:exported="false" />
+        <activity
+            android:name=".buvette"
+            android:exported="false" />
         <activity
             android:name=".searchtest"
             android:exported="false" />
