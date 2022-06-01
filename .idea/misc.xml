@@ -19,32 +19,38 @@
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_main2.xml" value="0.21" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_main3.xml" value="0.1" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_mainbot.xml" value="0.16" />
+        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_mainchambre.xml" value="0.11979166666666667" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_maindemande.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_mainn.xml" value="0.18" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_mainprofil.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_menu_adm_resident.xml" value="0.14" />
-        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_page_admin.xml" value="0.22" />
+        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_page_admin.xml" value="0.2" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_propos_resid.xml" value="0.18" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_visiteurmenu.xml" value="0.25" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_visiteurpage.xml" value="0.12" />
+        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_visualiserpage.xml" value="0.1328125" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/activity_yarbi.xml" value="0.1" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/adddemande.xml" value="0.16" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/bot_msg.xml" value="0.5" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/coch.xml" value="0.16" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/dialogcontent.xml" value="0.22" />
+        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/dialogcontentChambre.xml" value="0.1453125" />
+        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/dialogcontentchambre.xml" value="0.22" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/dialogcontentdemande.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/dialogcontentprob.xml" value="0.16354166666666667" />
-        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/dialogcontentprofil.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/dialogcontentprofil.xml" value="0.22" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/email.xml" value="0.2" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/hh.xml" value="0.25" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/list_item.xml" value="0.13958333333333334" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/liste_resid.xml" value="0.18" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/listprob.xml" value="0.1125" />
-        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/singlerow.xml" value="0.16" />
+        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/singlerow.xml" value="0.2" />
+        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/singlerowChambre.xml" value="0.1453125" />
+        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/singlerowchambre.xml" value="0.22" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/singlerowdemande.xml" value="0.22" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/singlerowprob.xml" value="0.22" />
-        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/singlerowprofil.xml" value="0.13" />
+        <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/singlerowprofil.xml" value="0.2" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/layout/user_msg.xml" value="0.25" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/menu/mainmenu.xml" value="0.22" />
         <entry key="..\:/Users/DeLL/InternatEnsias/app/src/main/res/menu/searchmenu.xml" value="0.21" />

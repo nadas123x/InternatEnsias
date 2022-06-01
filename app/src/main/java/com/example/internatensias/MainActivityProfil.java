@@ -16,14 +16,14 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivityProfil extends AppCompatActivity
 {
     RecyclerView recview;
-    myadapterDemande adapter;
+    myadapterProfil adapter;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maindemande);
-        setTitle("Rechercher");
+        setContentView(R.layout.activity_mainprofil);
+
 
 
 
@@ -33,12 +33,12 @@ public class MainActivityProfil extends AppCompatActivity
         recview=(RecyclerView)findViewById(R.id.recview);
         recview.setLayoutManager(new LinearLayoutManager(this));
 
-        FirebaseRecyclerOptions<demande> options =
-                new FirebaseRecyclerOptions.Builder<demande>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("DemandeBenef"), demande.class)
+        FirebaseRecyclerOptions<profil> options =
+                new FirebaseRecyclerOptions.Builder<profil>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("profil"), profil.class)
                         .build();
 
-        adapter=new myadapterDemande(options);
+        adapter=new myadapterProfil(options);
         recview.setAdapter(adapter);
     }
 
@@ -58,41 +58,12 @@ public class MainActivityProfil extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        getMenuInflater().inflate(R.menu.searchmenu,menu);
 
-        MenuItem item=menu.findItem(R.id.search);
 
-        SearchView searchView=(SearchView)item.getActionView();
 
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener()
-        {
-            @Override
-            public boolean onQueryTextSubmit(String s) {
-
-                processsearch(s);
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String s) {
-                processsearch(s);
-                return false;
-            }
-        });
 
         return super.onCreateOptionsMenu(menu);
     }
 
-    private void processsearch(String s)
-    {
-        FirebaseRecyclerOptions<demande> options =
-                new FirebaseRecyclerOptions.Builder<demande>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("DemandeBenef").orderByChild("nom").startAt(s).endAt(s+"\uf8ff"), demande.class)
-                        .build();
 
-        adapter=new myadapterDemande(options);
-        adapter.startListening();
-        recview.setAdapter(adapter);
-
-    }
 }

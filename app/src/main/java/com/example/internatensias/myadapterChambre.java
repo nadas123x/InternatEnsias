@@ -29,23 +29,23 @@ import java.util.Map;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
-public class myadapterProfil extends FirebaseRecyclerAdapter<profil, myadapterProfil.myviewholder>
+public class myadapterChambre extends FirebaseRecyclerAdapter<model, myadapterChambre.myviewholder>
 {
-    public myadapterProfil(@NonNull FirebaseRecyclerOptions<profil> options)
+    public myadapterChambre(@NonNull FirebaseRecyclerOptions<model> options)
     {
         super(options);
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull final myviewholder holder, @SuppressLint("RecyclerView") final int position, @NonNull final profil profil)
+    protected void onBindViewHolder(@NonNull final myviewholder holder, @SuppressLint("RecyclerView") final int position, @NonNull final model model)
     {
-        holder.name.setText(profil.getName());
-        holder.adress.setText(profil.getAdress());
-        holder.email.setText(profil.getEmail());
-        holder.NumTel.setText(profil.getNumTel());
-        holder.email.setText(profil.getEmail());
+        holder.name.setText(model.getName());
+        holder.filiere.setText(model.getfiliere());
+        holder.email.setText(model.getEmail());
+        holder.NumTel.setText(model.getNumTel());
+        holder.NumChambre.setText(model.getNumChambre());
 
-        Glide.with(holder.img.getContext()).load(profil.getPurl()).into(holder.img);
+        Glide.with(holder.img.getContext()).load(model.getPurl()).into(holder.img);
 
 
 
@@ -53,24 +53,26 @@ public class myadapterProfil extends FirebaseRecyclerAdapter<profil, myadapterPr
             @Override
             public void onClick(View view) {
                 final DialogPlus dialogPlus=DialogPlus.newDialog(holder.img.getContext())
-                        .setContentHolder(new ViewHolder(R.layout.dialogcontentprofil))
+                        .setContentHolder(new ViewHolder(R.layout.dialogcontentchambre))
                         .setExpanded(true,1100)
                         .create();
 
                 View myview=dialogPlus.getHolderView();
                 final EditText purl=myview.findViewById(R.id.uimgurl);
-                final EditText name=myview.findViewById(R.id.unom);
+                final EditText name=myview.findViewById(R.id.uname);
+                final EditText filiere=myview.findViewById(R.id.ufiliere);
                 final EditText email=myview.findViewById(R.id.uemail);
-                final EditText adress=myview.findViewById(R.id.uadress);
+                final EditText NumChambre=myview.findViewById(R.id.uNumChambre);
                 final EditText NumTel=myview.findViewById(R.id.uNumTel);
 
                 Button submit=myview.findViewById(R.id.usubmit);
 
-                purl.setText(profil.getPurl());
-                name.setText(profil.getName());
-                email.setText(profil.getEmail());
-                adress.setText(profil.getAdress());
-                NumTel.setText(profil.getNumTel());
+                purl.setText(model.getPurl());
+                name.setText(model.getName());
+                filiere.setText(model.getfiliere());
+                email.setText(model.getEmail());
+                NumChambre.setText(model.getNumChambre());
+                NumTel.setText(model.getNumTel());
 
                 dialogPlus.show();
 
@@ -78,14 +80,15 @@ public class myadapterProfil extends FirebaseRecyclerAdapter<profil, myadapterPr
                     @Override
                     public void onClick(View view) {
                         Map<String,Object> map=new HashMap<>();
+                        map.put("NumChambre",NumChambre.getText().toString());
+
                         map.put("purl",purl.getText().toString());
                         map.put("name",name.getText().toString());
-                        map.put("adress",adress.getText().toString());
-
                         map.put("email",email.getText().toString());
+                        map.put("filiere",filiere.getText().toString());
                         map.put("NumTel",NumTel.getText().toString());
 
-                        FirebaseDatabase.getInstance().getReference().child("profil")
+                        FirebaseDatabase.getInstance().getReference().child("students")
                                 .child(getRef(position).getKey()).updateChildren(map)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -117,7 +120,7 @@ public class myadapterProfil extends FirebaseRecyclerAdapter<profil, myadapterPr
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDatabase.getInstance().getReference().child("profil")
+                        FirebaseDatabase.getInstance().getReference().child("students")
                                 .child(getRef(position).getKey()).removeValue();
                     }
                 });
@@ -139,7 +142,7 @@ public class myadapterProfil extends FirebaseRecyclerAdapter<profil, myadapterPr
     @Override
     public myviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.singlerowprofil,parent,false);
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.singlerowchambre,parent,false);
         return new myviewholder(view);
     }
 
@@ -148,15 +151,15 @@ public class myadapterProfil extends FirebaseRecyclerAdapter<profil, myadapterPr
     {
         CircleImageView img;
         ImageView edit,delete;
-        TextView name,email,NumTel,adress;
+        TextView name,filiere,email,NumTel,NumChambre;
         public myviewholder(@NonNull View itemView)
         {
             super(itemView);
             img=(CircleImageView) itemView.findViewById(R.id.img1);
-            adress=(TextView)itemView.findViewById(R.id.adresstext);
-            name=(TextView)itemView.findViewById(R.id.nomtext);
+            name=(TextView)itemView.findViewById(R.id.nametext);
+            filiere=(TextView)itemView.findViewById(R.id.filieretext);
             email=(TextView)itemView.findViewById(R.id.emailtext);
-
+            NumChambre=(TextView)itemView.findViewById(R.id.NumChambretxt);
             NumTel=(TextView)itemView.findViewById(R.id.Numteltxt);
 
             edit=(ImageView)itemView.findViewById(R.id.editicon);

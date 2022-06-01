@@ -43,7 +43,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
         holder.filiere.setText(model.getfiliere());
         holder.email.setText(model.getEmail());
         holder.NumTel.setText(model.getNumTel());
-        holder.NumChambre.setText(model.getEmail());
+        holder.NumChambre.setText(model.getNumChambre());
 
         Glide.with(holder.img.getContext()).load(model.getPurl()).into(holder.img);
 
@@ -80,11 +80,12 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
                     @Override
                     public void onClick(View view) {
                         Map<String,Object> map=new HashMap<>();
+                        map.put("NumChambre",NumChambre.getText().toString());
+
                         map.put("purl",purl.getText().toString());
                         map.put("name",name.getText().toString());
                         map.put("email",email.getText().toString());
                         map.put("filiere",filiere.getText().toString());
-                        map.put("NumChambre",NumChambre.getText().toString());
                         map.put("NumTel",NumTel.getText().toString());
 
                         FirebaseDatabase.getInstance().getReference().child("students")

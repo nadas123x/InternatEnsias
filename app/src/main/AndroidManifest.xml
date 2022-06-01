@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InternatEnsias">
         <activity
-            android:name=".ProfileActivity"
+            android:name=".MainActivityChambres"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityProfil"
             android:exported="false" />
         <activity
             android:name=".Appel"
@@ -55,7 +58,7 @@
             android:name=".LoginAdmin"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".visualiserpage"
             android:exported="false" />
         <activity
             android:name=".Visiteurmenu"
@@ -92,6 +95,9 @@
             android:exported="false" />
         <activity
             android:name=".MainActivityresid"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
             android:exported="false" />
         <activity
             android:name=".PageAdmin"

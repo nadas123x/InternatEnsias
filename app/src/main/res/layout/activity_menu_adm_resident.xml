@@ -8,7 +8,7 @@
     android:background="@mipmap/adminpage2">
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/contacts"
         style="@style/MaterialAlertDialog.Material3"
 
         android:layout_width="140dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/Chambres"
         style="@style/MaterialAlertDialog.Material3"
 
         android:layout_width="142dp"
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/profil"
         style="@style/MaterialAlertDialog.Material3"
 
         android:layout_width="141dp"

@@ -6,29 +6,43 @@
     android:orientation="vertical"
     >
 
-    <EditText
-        android:id="@+id/uimgurl"
-        android:layout_width="394dp"
-        android:layout_height="16dp"
-        android:layout_marginTop="10dp"
-        android:hint="Image URL"
-        android:textSize="20sp" />
-
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="8dp"
+        android:layout_height="21dp"
         android:background="@color/black"
         android:gravity="center"
         android:text="Update Content Panel"
         android:textColor="#fff"
         android:textSize="25sp" />
 
+    <EditText
+        android:id="@+id/uimgurl"
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_marginTop="10dp"
+        android:hint="Image URL"
+        android:textSize="20sp" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:id="@+id/uname"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ufiliere"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="10dp"
+        android:hint="filiere"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/uemail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="6dp"
         android:layout_marginTop="10dp"
         android:hint="Email"
         android:textSize="20sp" />
@@ -36,39 +50,28 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Num tel"
-        android:id="@+id/uNumTel"
+        android:hint="Num chambre"
+        android:id="@+id/uNumChambre"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/unom"
+        android:id="@+id/uNumTel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="1dp"
         android:layout_marginTop="10dp"
-        android:hint="Name"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/uadress"
-        android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:layout_marginTop="10dp"
-        android:hint="Adress"
-        android:textColor="#fff"
+        android:hint="Num tél"
         android:textSize="20sp" />
 
     <Button
         android:id="@+id/usubmit"
-
-        style="@style/MaterialAlertDialog.Material3"
-        android:layout_width="262dp"
-        android:layout_height="wrap_content"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:backgroundTint="#CA492D"
-        android:text="Modifier"
+        android:background="@color/black"
+        android:text="Update"
         android:textColor="#fff"
         android:textSize="15sp" />
 
